@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2024/11/Ratio"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2024/11/Ratio">
+    <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2024/11/Ratio/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontology for an Intelligent Tutoring System focusing on solving ratio problems.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Feedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RatioProblem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RatioValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Step"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeedback"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRatioValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leadsTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#calculatedValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#message"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ratioPart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Problem1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RatioValue2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RatioValue1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Step3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Step4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Step1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Step2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feedback2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feedback3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feedback4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feedback1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quantity1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quantity2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hint2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hint3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hint1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hint4"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hint"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quantity"/>
+        <Class IRI="#RatioProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RatioValue"/>
+        <Class IRI="#RatioProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Step"/>
+        <Class IRI="#RatioProblem"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Feedback"/>
+        <NamedIndividual IRI="#Feedback1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feedback"/>
+        <NamedIndividual IRI="#Feedback2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feedback"/>
+        <NamedIndividual IRI="#Feedback3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feedback"/>
+        <NamedIndividual IRI="#Feedback4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hint"/>
+        <NamedIndividual IRI="#Hint1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hint"/>
+        <NamedIndividual IRI="#Hint2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hint"/>
+        <NamedIndividual IRI="#Hint3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hint"/>
+        <NamedIndividual IRI="#Hint4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RatioProblem"/>
+        <NamedIndividual IRI="#Problem1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quantity"/>
+        <NamedIndividual IRI="#Quantity1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Quantity"/>
+        <NamedIndividual IRI="#Quantity2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RatioValue"/>
+        <NamedIndividual IRI="#RatioValue1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RatioValue"/>
+        <NamedIndividual IRI="#RatioValue2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#Step1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#Step2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#Step3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#Step4"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Quantity1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Quantity2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRatioValue"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#RatioValue1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRatioValue"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#RatioValue2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Step1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Step2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Step3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Step4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#Step1"/>
+        <NamedIndividual IRI="#Feedback1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHint"/>
+        <NamedIndividual IRI="#Step1"/>
+        <NamedIndividual IRI="#Hint1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#leadsTo"/>
+        <NamedIndividual IRI="#Step1"/>
+        <NamedIndividual IRI="#Step2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#Step2"/>
+        <NamedIndividual IRI="#Feedback2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHint"/>
+        <NamedIndividual IRI="#Step2"/>
+        <NamedIndividual IRI="#Hint2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#leadsTo"/>
+        <NamedIndividual IRI="#Step2"/>
+        <NamedIndividual IRI="#Step3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#Step3"/>
+        <NamedIndividual IRI="#Feedback3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHint"/>
+        <NamedIndividual IRI="#Step3"/>
+        <NamedIndividual IRI="#Hint3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#leadsTo"/>
+        <NamedIndividual IRI="#Step3"/>
+        <NamedIndividual IRI="#Step4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <NamedIndividual IRI="#Step4"/>
+        <NamedIndividual IRI="#Feedback4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHint"/>
+        <NamedIndividual IRI="#Step4"/>
+        <NamedIndividual IRI="#Hint4"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message"/>
+        <NamedIndividual IRI="#Feedback1"/>
+        <Literal>You missed identifying the ratio parts. Try again.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message"/>
+        <NamedIndividual IRI="#Feedback2"/>
+        <Literal>Ensure you add the ratio parts correctly. Check your math.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message"/>
+        <NamedIndividual IRI="#Feedback3"/>
+        <Literal>Double-check your division. Divide total value by the sum of ratio parts.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message"/>
+        <NamedIndividual IRI="#Feedback4"/>
+        <Literal>Verify your multiplication results for each ratio part.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#text"/>
+        <NamedIndividual IRI="#Hint1"/>
+        <Literal>Look at the problem statement and note the ratio parts (e.g., 2:3).</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#text"/>
+        <NamedIndividual IRI="#Hint2"/>
+        <Literal>Add the parts of the ratio together. For example, 2 + 3 = 5.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#text"/>
+        <NamedIndividual IRI="#Hint3"/>
+        <Literal>Divide the total value (e.g., 100) by the sum of the parts (5) to get the unit value.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#text"/>
+        <NamedIndividual IRI="#Hint4"/>
+        <Literal>Multiply the unit value by each ratio part to get the final answers.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalValue"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratioPart"/>
+        <NamedIndividual IRI="#Quantity1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratioPart"/>
+        <NamedIndividual IRI="#Quantity2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calculatedValue"/>
+        <NamedIndividual IRI="#RatioValue1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calculatedValue"/>
+        <NamedIndividual IRI="#RatioValue2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Step1"/>
+        <Literal>Identify the parts of the ratio and their values.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Step2"/>
+        <Literal>Add the parts of the ratio together.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Step3"/>
+        <Literal>Divide the total value by the sum of the ratio parts to find the unit value.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Step4"/>
+        <Literal>Multiply the unit value by each ratio part to get the final answers.</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHint"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <Class IRI="#RatioProblem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRatioValue"/>
+        <Class IRI="#RatioProblem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStep"/>
+        <Class IRI="#RatioProblem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#leadsTo"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFeedback"/>
+        <Class IRI="#Feedback"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHint"/>
+        <Class IRI="#Hint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRatioValue"/>
+        <Class IRI="#RatioValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStep"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#leadsTo"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#calculatedValue"/>
+        <Class IRI="#RatioValue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Step"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#message"/>
+        <Class IRI="#Feedback"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ratioPart"/>
+        <Class IRI="#Quantity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#text"/>
+        <Class IRI="#Hint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#totalValue"/>
+        <Class IRI="#RatioProblem"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#calculatedValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#message"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ratioPart"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#text"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#totalValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Feedback</IRI>
+        <Literal>Feedback messages for steps, based on learner input.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hint</IRI>
+        <Literal>Hints provided to guide learners for specific steps.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Quantity</IRI>
+        <Literal>Represents the quantities that form parts of the ratio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RatioProblem</IRI>
+        <Literal>The parent class representing ratio problems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RatioValue</IRI>
+        <Literal>The computed value for each ratio part, derived from totalValue and quantities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Step</IRI>
+        <Literal>Represents the individual steps involved in solving a ratio problem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#calculatedValue</IRI>
+        <Literal>The computed value for a specific ratio part.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#description</IRI>
+        <Literal>Describes what the learner should do in this step.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFeedback</IRI>
+        <Literal>Links steps to feedback based on performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasHint</IRI>
+        <Literal>Associates a step with hints for guidance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasQuantity</IRI>
+        <Literal>Links the ratio problem to its quantity components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRatioValue</IRI>
+        <Literal>Links the ratio problem to its calculated ratio values (answers).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasStep</IRI>
+        <Literal>Links a ratio problem to its solving steps.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#leadsTo</IRI>
+        <Literal>Defines the sequence between steps in problem-solving.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#message</IRI>
+        <Literal>Feedback message based on learner&apos;s performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ratioPart</IRI>
+        <Literal>The numerical value of each part in the ratio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#text</IRI>
+        <Literal>Text content of a hint to help the learner.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#totalValue</IRI>
+        <Literal>The total value for solving the ratio problem.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
