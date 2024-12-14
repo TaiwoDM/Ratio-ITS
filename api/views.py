@@ -43,8 +43,6 @@ def getData(request):
 
     response['total_value'] = problem.totalValue[0]
 
-    # return data
-
     print(problem)
 
     return Response(response)
