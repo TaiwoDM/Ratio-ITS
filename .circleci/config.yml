@@ -2,7 +2,7 @@
 # Stacks detected: deps:python:.,file:manage.py:.
 version: 2.1
 orbs:
-  python: circleci/python@2
+  python: circleci/python@3.13.1
 jobs:
   test-python:
     # Install dependencies and run tests
